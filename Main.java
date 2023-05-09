@@ -35,7 +35,11 @@ public class Main {
         System.out.println(Math.addExact(2, 3));
 
         //making sure that the book is gone
-        //System.out.println(virtualLib.listOfBooks.get(1).title); // => Throws an error
+        try {
+            System.out.println(virtualLib.listOfBooks.get(1).title); // => Throws an error
+        } catch (Exception e){
+            System.out.println("The book does not exist.");
+        }
 
         //Code working perfectly.
 
